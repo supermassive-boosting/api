@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@supermassive/api",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "main": "../../artifacts/api/app.js",
+  "directories": {
+    "lib": "src",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write ../../artifacts/api && eslint --fix ../../artifacts/api",
+    "lint": "prettier --check ../../artifacts/api && eslint ../../artifacts/api",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/supermassive-boosting/supermassive",
+  "funding": "https://github.com/supermassive-boosting/supermassive?sponsor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/supermassive-boosting/supermassive.git",
+    "directory": "packages/api"
+  },
+  "bugs": {
+    "email": "kendinikertenkelebek@me.com",
+    "url": "https://github.com/supermassive-boosting/supermassive/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "express-validator": "^7.2.0",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.5.3"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.3.0"
+  },
+  "engines": {
+    "node": ">= 22.6.0"
+  },
+  "license": "LGPL-3.0-or-later",
+  "author": "Yankı Küçük <kendinikertenkelebek@me.com>",
+  "packageManager": "pnpm@9.7.1"
+}

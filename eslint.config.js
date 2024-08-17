@@ -5,7 +5,15 @@ import prettier from 'eslint-plugin-prettier';
 
 export default [
   {
+    files: ['**/*.{js,ts}'],
     ignores: ['node_modules', '.git'],
+    languageOptions: {
+      parserOptions: {
+        warnOnUnsupportedTypeScriptVersion: true,
+        allowAutomaticSingleRunInference: true,
+        project: ['tsconfig.eslint.json', 'packages/*/tsconfig.eslint.json'],
+      },
+    },
     plugins: {
       import: eslintImport,
       jsdoc,
@@ -231,23 +239,35 @@ export default [
         'error',
         {
           name: 'Buffer',
-          message: 'Import Buffer from `node:buffer` instead',
+          message: 'Import Buffer from `node:buffer` instead.',
         },
         {
           name: 'process',
-          message: 'Import process from `node:process` instead',
+          message: 'Import process from `node:process` instead.',
         },
         {
           name: 'setTimeout',
-          message: 'Import setTimeout from `node:timers` instead',
+          message: 'Import setTimeout from `node:timers` instead.',
         },
         {
           name: 'setInterval',
-          message: 'Import setInterval from `node:timers` instead',
+          message: 'Import setInterval from `node:timers` instead.',
         },
         {
           name: 'setImmediate',
-          message: 'Import setImmediate from `node:timers` instead',
+          message: 'Import setImmediate from `node:timers` instead.',
+        },
+        {
+          name: 'clearTimeout',
+          message: 'Import clearTimeout from `node:timers` instead.',
+        },
+        {
+          name: 'clearInterval',
+          message: 'Import clearInterval from `node:timers` instead.',
+        },
+        {
+          name: 'fs',
+          message: 'Import process from `node:fs` instead.',
         },
       ],
       /**
