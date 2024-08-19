@@ -1,0 +1,79 @@
+{
+  "files": [
+    {
+      "path": "packages/structure/src/boost/raid.ts",
+      "bookmarks": [
+        {
+          "line": 18,
+          "column": 2,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "path": "packages/structure/src/boost/dungeon/index.ts",
+      "bookmarks": [
+        {
+          "line": 29,
+          "column": 2,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "path": "packages/structure/src/account/index.ts",
+      "bookmarks": [
+        {
+          "line": 29,
+          "column": 4,
+          "label": ""
+        },
+        {
+          "line": 35,
+          "column": 4,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "path": "packages/structure/src/boost/index.ts",
+      "bookmarks": [
+        {
+          "line": 63,
+          "column": 2,
+          "label": ""
+        },
+        {
+          "line": 79,
+          "column": 2,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "path": "packages/structure/src/boost/dungeon/detail.ts",
+      "bookmarks": [
+        {
+          "line": 17,
+          "column": 4,
+          "label": ""
+        },
+        {
+          "line": 27,
+          "column": 2,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "path": "packages/structure/src/account/ticket.ts",
+      "bookmarks": [
+        {
+          "line": 64,
+          "column": 2,
+          "label": ""
+        }
+      ]
+    }
+  ]
+}
