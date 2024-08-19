@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@supermassive/structure",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "types": "./typings/index.d.ts",
+  "directories": {
+    "lib": "src",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write ../../artifacts/structure && eslint --fix ../../artifacts/structure",
+    "lint": "prettier --check ../../artifacts/structure && eslint ../../artifacts/structure",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/supermassive-boosting/supermassive",
+  "funding": "https://github.com/supermassive-boosting/supermassive?sponsor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/supermassive-boosting/supermassive.git",
+    "directory": "packages/structure"
+  },
+  "bugs": {
+    "email": "kendinikertenkelebek@me.com",
+    "url": "https://github.com/supermassive-boosting/supermassive/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.3.0"
+  },
+  "engines": {
+    "node": ">= 22.6.0"
+  },
+  "license": "LGPL-3.0-or-later",
+  "author": "Yankı Küçük <kendinikertenkelebek@me.com>",
+  "packageManager": "pnpm@9.7.1"
+}
