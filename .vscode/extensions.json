@@ -11,6 +11,7 @@
     "wix.vscode-import-cost",
     "oderwat.indent-rainbow",
     "remcohaszing.schemastore",
+    "idered.npm",
     "herrmannplatz.npm-dependency-links",
     "christian-kohler.npm-intellisense",
     "christian-kohler.path-intellisense",
