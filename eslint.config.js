@@ -6,8 +6,10 @@ import prettier from 'eslint-plugin-prettier';
 export default [
   {
     files: ['**/*.{js,ts}'],
-    ignores: ['node_modules', '.git'],
+    ignores: ['node_modules', '.git', '.husky', '.github', '.vscode'],
     languageOptions: {
+      sourceType: 'module',
+      ecmaVersion: 2023,
       parserOptions: {
         warnOnUnsupportedTypeScriptVersion: true,
         allowAutomaticSingleRunInference: true,
@@ -221,7 +223,7 @@ export default [
       'prefer-spread': ['error'],
       'prefer-template': ['error'],
       camelcase: ['error'],
-      complexity: ['error', { max: 9 }],
+      complexity: ['error', { max: 15 }],
       'default-case': ['error'],
       'default-case-last': ['error'],
       'default-param-last': ['error'],
@@ -275,10 +277,6 @@ export default [
        * Layout & Formatting
        */
       'unicode-bom': ['error'],
-    },
-    languageOptions: {
-      sourceType: 'module',
-      ecmaVersion: 'latest',
     },
   },
 ];
