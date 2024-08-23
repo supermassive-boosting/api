@@ -1,15 +1,19 @@
+//@ ts-check
+
 import eslintImport from 'eslint-plugin-import';
 import jsdoc from 'eslint-plugin-jsdoc';
 import node from 'eslint-plugin-node';
 import prettier from 'eslint-plugin-prettier';
+import tseslint from 'typescript-eslint';
 
 export default [
   {
+    root: true,
     files: ['**/*.{js,ts}'],
     ignores: ['node_modules', '.git', '.husky', '.github', '.vscode'],
     languageOptions: {
       sourceType: 'module',
-      ecmaVersion: 2023,
+      ecmaVersion: 2024,
       parserOptions: {
         warnOnUnsupportedTypeScriptVersion: true,
         allowAutomaticSingleRunInference: true,
@@ -17,6 +21,7 @@ export default [
       },
     },
     plugins: {
+      tseslint,
       import: eslintImport,
       jsdoc,
       node,

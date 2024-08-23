@@ -99,6 +99,8 @@ type TStatus = 'open' | 'closed';
 
 type TKeystoneLevel = TRange<1, 41>;
 
+type TAccountType = 'client' | 'booster';
+
 export interface ISupermassiveResponse {
   status: boolean;
   payload: string | object;
@@ -193,6 +195,40 @@ export interface IDifficulty {
   HEROIC: 'heroic';
   NORMAL: 'normal';
   LFR: 'lfr';
+}
+
+interface IPunishment {
+  id: string;
+  reason: string;
+  createdAt: Date;
+  updatedAt: Date;
+  account: IAccount;
+  ticket: ITicket;
+  suspend: number | boolean;
+}
+
+interface IAccount {
+  id: string;
+  type: TAccountType;
+  username: string;
+  email: string;
+  lastLogin: Date;
+  createdAt: Date;
+  updatedAt?: Date;
+  punishment: IPunishment[] | [];
+  trust: number;
+}
+
+interface IAccountOptions {
+  id: string;
+  type: TAccountType;
+  username: string;
+  email: string;
+  lastLogin: Date;
+  createdAt: Date;
+  updatedAt: Date;
+  punishment?: IPunishment[];
+  trust: number;
 }
 
 /**
